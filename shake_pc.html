@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>随心听</title>
+	<meta name="referrer" content="never">
+	<link rel="stylesheet" href="reset2.0.css">
+	<link rel="stylesheet" href="shake_pc.css">
+</head>
+<body>
+	<div class="bg" id="bg">
+	</div>
+	<div class="music-player">
+		<div class="info">
+			<div class="song-name" id="songName"></div>
+			<div class="author" id="author">By <span></span></div>
+			<div class="progress" id="progress"></div>
+		</div>
+		<div class="controls">
+			<div class="time" id="time">00:00</div>
+			<div class="play-controls">
+				<a href="javascript:;" class="prev btn" id="prev">
+				</a><a href="javascript:;" class="play btn" id="play">
+				</a><a href="javascript:;" class="next btn" id="next"></a>
+			</div>
+			<div class="volume-bar">
+				<a href="javascript:;" class="vol-muted" id="muted">
+				</a><a href="javascript:;" class="vol-slider" id="volSilder">
+					<span class="vol-slider-inner" id="volInner"></span>
+				</a><a href="javascript:;" class="vol-max" id="volMax"></a>
+			</div>
+		</div>
+		<audio id="audio" controls style="display: none;"></audio>
+	</div>
+	<script type="text/javascript" src="socket.io.js"></script>
+	<script type="text/javascript" src="shake_pc.js"></script>
+</body>
+</html>

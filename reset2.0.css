@@ -1,0 +1,73 @@
+html{
+    -webkit-text-size-adjust:100%;
+    height: 100%;
+}
+input, textarea, button, a, img{
+     -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, 
+dl, dt, dd, ul, ol, li, 
+pre, 
+fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td { 
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea { 
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+/* 设置标题字体正常显示 */
+h1, h2, h3, h4, h5, h6{ font-weight: normal; }
+h1 { font-size: 18px;  }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 100%; }
+
+address, cite, dfn, em, var, i { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+img{ display: block; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none; color:#565656; }
+a:hover { text-decoration: underline; }
+
+q:before, q:after { content: ''; }
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* -------------------------- Utilities ------------------------------- */
+/************* DISPLAYS&POSITION **************/
+.inline { display: inline;}
+.block { display: block;}
+.inline-block { display: inline-block;}
+.nd{ display: none;}
+.nf{ float: none;}
+.fl{ float: left;}
+.fr{ float: right;}
+.pr{ position: relative;}
+.pa{ position: absolute;}
+.pf{ position: fixed;}
+.dpsr{
+  opacity: 0;
+  -moz-opacity: 0;
+}
+.clearfix:after{
+  display: block;
+  content:'';
+  height: 0;
+  visibility: hidden;
+  clear:both;
+}
+

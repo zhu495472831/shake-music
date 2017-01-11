@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>摇一摇切歌</title>
+	<link rel="stylesheet" href="shake.css">
+</head>
+<body>
+	<div class="wrap" id="wrap">
+		<div class="inner"></div>
+		<div class="above-hand hand" id="up"></div>
+		<div class="below-hand hand" id="bt"></div>
+	</div>
+	<div class="tip" id="tip">
+		
+	</div>
+	<div style="display: none;">
+		<audio id="shaking" src="new_silent.mp3"></audio>
+		<audio id="found" src="new_silent.mp3"></audio>
+	</div>
+	<script type="text/javascript" src="socket.io.js"></script>
+	<script src="shake.js"></script>
+</body>
+</html>
